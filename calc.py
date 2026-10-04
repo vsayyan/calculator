@@ -22,7 +22,7 @@ def modulo(a,b):
     return a % b
 
 
-print(add(1,2))
+print("add:", add(1, 2))
 print(subtract(2,1))
 print(multiply(1,2))
 
