@@ -33,7 +33,7 @@ except ValueError as error:
     print("Error:",error)
 
 print("add:", add(1, 2))
-print(subtract(2,1))
+print("sum =",subtract(2,1))
 print(multiply(1,2))
 
 try:
