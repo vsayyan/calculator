@@ -33,7 +33,11 @@ except ValueError as error:
     print("Error:",error)
 
 print("add:", add(1, 2))
+<<<<<<< HEAD
 print("add:",subtract(2,1))
+=======
+print("sum =",subtract(2,1))
+>>>>>>> label-b
 print(multiply(1,2))
 
 try:
