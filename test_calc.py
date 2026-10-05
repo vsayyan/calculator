@@ -21,8 +21,15 @@ def test_divide_by_zero():
 def test_power():
     assert power(2,3) == 8
 
+def test_power_by_zero():
+    assert power(2,0) == 1
+
 def test_modulo():
     assert modulo(7,3) == 1
+
+def test_modulo_by_zero():
+    with pytest.raises(ValueError):
+        modulo(7,0)
 
 def test_average():
     assert average([1,2,3,4,5,6]) == 3.5
@@ -30,6 +37,9 @@ def test_average():
 def test_average_empty_list():
     with pytest.raises(ValueError):
         average([])
+
+def test_average_one_item_list():
+    assert average([5]) == 1
 
 def test_percentage():
     assert percentage(50,200) == 25
