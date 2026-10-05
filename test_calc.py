@@ -1,5 +1,5 @@
 import pytest
-from calc import add, subtract, multiply, divide, power, modulo, average
+from calc import add, subtract, multiply, divide, power, modulo, average, percentage
 
 def test_add():
     assert add(1,2) == 3
@@ -30,3 +30,10 @@ def test_average():
 def test_average_empty_list():
     with pytest.raises(ValueError):
         average([])
+
+def test_percentage():
+    assert percentage(50,200) == 25
+
+def test_percentage_by_zero():
+    with pytest.raises(ValueError):
+        percentage(50,0)
