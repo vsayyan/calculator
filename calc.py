@@ -21,11 +21,6 @@ def modulo(a,b):
         raise ValueError("Cannot divide by zero")
     return a % b
 
-def average(numbers):
-    if len(numbers) == 0:
-        raise ValueError("Cannot list length by zero")
-    return sum(numbers) / len(numbers)
-
 
 
 print("add:", add(1, 2))
@@ -41,8 +36,3 @@ except ValueError as error:
 print(power(2, 3))
 print(modulo(7, 3))
 
-try:
-    print(average([1,2,3,4,5,6]))
-    print(average([]))
-except ValueError as error:
-    print("Error:",error)
