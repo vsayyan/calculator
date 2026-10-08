@@ -39,7 +39,7 @@ def test_average_empty_list():
         average([])
 
 def test_average_one_item_list():
-    assert average([5]) == 1
+    assert average([5]) == 5
 
 def test_percentage():
     assert percentage(50,200) == 25
